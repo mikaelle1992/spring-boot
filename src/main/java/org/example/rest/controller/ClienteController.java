@@ -37,6 +37,7 @@ public class ClienteController {
     public Cliente save(@RequestBody Cliente cliente){
        return clientes.save(cliente);
     }
+
     @DeleteMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete (@PathVariable Integer id){
